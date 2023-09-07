@@ -5,7 +5,6 @@ from fastapi import UploadFile
 
 def process_image(file: UploadFile):
     try:
-        # Read and open the uploaded image
         input_image = Image.open(BytesIO(file.file.read()))
 
         # Resize the image
