@@ -1,7 +1,8 @@
-from PIL import Image, ImageEnhance, ImageFilter
-from io import BytesIO
 import base64
+
 from fastapi import UploadFile
+from io import BytesIO
+from PIL import Image, ImageEnhance, ImageFilter
 
 def process_image(file: UploadFile):
     try:
